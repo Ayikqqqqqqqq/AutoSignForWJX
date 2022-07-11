@@ -42,6 +42,7 @@ jobs:
           python ./AutoSignIn.py
         env:
           qlist_header: ${{ secrets.QLIST_HEADER }}
+          qlist_url: ${{ secrets.QLIST_URL }}
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
