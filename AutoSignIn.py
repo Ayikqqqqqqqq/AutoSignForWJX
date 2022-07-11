@@ -11,5 +11,5 @@ url = os.environ['qlist_url']
 if __name__ == '__main__':
     #r = requests.get(url)
     print(url)
-    headers = json.dumps(headers)
+    headers = json.loads(headers)
     print(headers['Sec-Fetch-Site'])
