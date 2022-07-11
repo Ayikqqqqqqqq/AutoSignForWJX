@@ -1,4 +1,4 @@
 requests
-execjs
+PyExecJS
 lxml
-urllib.parse
+urllib3
