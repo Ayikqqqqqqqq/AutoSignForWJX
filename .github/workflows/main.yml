@@ -40,6 +40,8 @@ jobs:
           sudo cp -p ./chromedriver /usr/bin
           chmod -R 777 /usr/bin/chromedriver
           python ./AutoSignIn.py
+        env:
+          qlist_header: ${{ secrets.QLIST_HEADER }}
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
