@@ -1,0 +1,4 @@
+requests
+execjs
+lxml
+urllib.parse
