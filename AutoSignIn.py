@@ -5,7 +5,8 @@ import os
 import requests
 
 headers = os.environ['qlist_header']
+url = os.environ['qlist_url']
 
 if __name__ == '__main__':
-    r = requests.get('https://www.baidu.com')
+    r = requests.get(url)
     print(r.text)
