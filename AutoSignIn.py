@@ -137,7 +137,7 @@ def js_from_file(file_name: str):
 
 
 def get_param(rn: str, t: str, aid: str):
-    context1 = execjs.compile(js_from_file('../lib/get_jqparam.js'))
+    context1 = execjs.compile(js_from_file('./lib/get_jqparam.js'))
     result1 = context1.call("get_jqParam", rn, t, aid)
     result1 = sort_jqparam(result1)
     return result1
