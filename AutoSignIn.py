@@ -111,7 +111,6 @@ def decode_id(did):
 def get_link_name():
     t = datetime.datetime.now()
     s = '学生动态调查表{}.{}.{}'.format(t.year, t.month, t.day)
-    s = '2022年度高校适龄大学生参军问卷调查表'
     return s
 
 
