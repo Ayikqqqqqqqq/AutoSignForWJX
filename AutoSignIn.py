@@ -10,4 +10,4 @@ url = os.environ['qlist_url']
 if __name__ == '__main__':
     #r = requests.get(url)
     print(url)
-    print(header['Sec-Fetch-Site'])
+    print(headers['Sec-Fetch-Site'])
