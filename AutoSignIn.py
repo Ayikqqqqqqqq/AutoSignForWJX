@@ -42,9 +42,10 @@ class App:
             survey[names[i]] = link
             i += 1
 
-        link = survey.get(get_link_name())
+        link_name = get_link_name()
+        link = survey.get(link_name)
         if link is None:
-            raise Exception('没有找到当天的健康问卷')
+            raise Exception('没有找到当天的健康问卷->', link_name)
 
         print('正在获取', get_link_name())
         link = link.replace("/vm", "/vj")
