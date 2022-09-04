@@ -31,8 +31,6 @@ class App:
     def get_list(self):
         url = qlist_url
         headers = json.loads(qlist_header)
-        url = 'https://www.baidu.com'
-        headers = {}
         r = self.session.get(url, headers=headers).text
         print(r)
         tree = etree.HTML(r)
