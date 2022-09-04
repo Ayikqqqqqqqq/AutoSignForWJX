@@ -31,9 +31,10 @@ class App:
     def get_list(self):
         url = qlist_url
         headers = json.loads(qlist_header)
-        print(url,headers)
+        url = 'https://www.baidu.com'
+        headers = {}
         r = self.session.get(url, headers=headers).text
-        # print(r)
+        print(r)
         tree = etree.HTML(r)
         links = tree.xpath('//div[@id="ulQs"]/dl/a/@href')
         names = tree.xpath('//div[@id="ulQs"]/dl/a/span[@class="title"]/text()')
